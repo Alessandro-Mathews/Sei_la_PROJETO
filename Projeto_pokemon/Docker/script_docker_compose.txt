@@ -1,0 +1,13 @@
+1 - É importante verificar se está no diretório correto para executar o Docker, nesse caso, na pasta: Docker.
+
+docker-compose up -d #Comando para criar o docker-compose.
+
+docker-compose exec -u root pokemon_bd mysql -h localhost -P 3307 -uroot -p #Comando para executar o docker, vai pedir para inserir a senha.
+
+show databases; -Comando para verificar as databases criadas.
+
+show tables; -Para olhar as tabelas criadas.
+
+select * from tb_pokemon_stage;  #Comando para selecionar as tabelas;
+
+Após isso é só executar os comandos do script do MYSQL, linha por linha.
